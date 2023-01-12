@@ -21,25 +21,12 @@ export class MainPageComponent  {
   ];
 
   nuevo: Personaje = {
-    nombre: '',
-    poder: 0
+    nombre: 'Krillin',
+    poder: 1500
     
   }
 
-  cambiarNombre(event:any){
-    console.log(event.target.value)
-  }
-
-  agregar(){
-    if (this.nuevo.nombre.trim().length === 0){return;}
-
-    console.log(this.nuevo);
-    this.personajes.push(this.nuevo);
-    this.nuevo = {
-      nombre: '',
-      poder: 0
-    }
-  }
+  
 
 }
                             
